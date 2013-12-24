@@ -22,3 +22,42 @@ optionally, you can specify the file name
 ```javascript
 require('econf')('config.js');
 ```
+
+#.econf.js example
+```javascript
+module.exports = [
+	{
+		_name: 'newrelic',
+		NEW_RELIC_KEY: 'key'
+	},
+	{
+		_name: 'production',
+		NAME: 'Production Base',
+		AWS_SECRET: 'aws-secret',
+		AWS_KEY: 'aws-key',
+		EMAIL_DELAY: 1000
+	},
+	{
+		_name: 'production.001',
+		_extend: ['production', 'newrelic'],
+		NAME: 'Production 001',
+		EMAIL_DELAY: 0
+	}
+]
+```
+
+The config above will inject the code below into process.env
+```javascript
+{
+	"_name": "production.001",
+	"_extend": [
+		"production",
+		"newrelic"
+	],
+	"NAME": "Production 001",
+	"EMAIL_DELAY": 0,
+	"AWS_SECRET": "aws-secret",
+	"AWS_KEY": "aws-key",
+	"NEW_RELIC_KEY": "key"
+}
+```
