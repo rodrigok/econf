@@ -61,3 +61,21 @@ The config above will inject the code below into process.env
 	"NEW_RELIC_KEY": "key"
 }
 ```
+
+#Global Usage
+```javascript
+npm install econf -g
+```
+
+With global version you can view your config parsed, just execute econf into your project directory
+```javascript
+econf
+```
+![econf](rodrigok.github.com/econf/img/econf.png)
+
+
+To create a example .econf.js file into your project just execute econf init into your project directory
+```javascript
+econf init
+```
+![econf init](rodrigok.github.com/econf/img/econf-init.png)
