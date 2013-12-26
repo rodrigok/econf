@@ -71,11 +71,11 @@ With global version you can view your config parsed, just execute econf into you
 ```javascript
 econf
 ```
-![econf](rodrigok.github.com/econf/img/econf.png)
+![econf](img/econf.png)
 
 
 To create a example .econf.js file into your project just execute econf init into your project directory
 ```javascript
 econf init
 ```
-![econf init](rodrigok.github.com/econf/img/econf-init.png)
+![econf](img/econf-init.png)
