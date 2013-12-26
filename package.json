@@ -8,5 +8,13 @@
   "repository": "https://github.com/rodrigok/econf",
   "author": "Rodrigo K. Nascimento (rodrigoknascimento@gmail.com)",
   "license": "MIT",
-  "main" : "./lib/index.js"
+  "main": "./lib/index.js",
+  "bin": {
+    "econf": "bin/econf.js"
+  },
+  "preferGlobal": "false",
+  "dependencies": {
+    "commander": "~2.1.0",
+    "colors": "~0.6.2"
+  }
 }
