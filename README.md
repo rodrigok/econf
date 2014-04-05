@@ -4,7 +4,8 @@ econf
 Load configs from hierarchical objects to process.env
 
 [![NPM version](https://badge.fury.io/js/econf.svg)](http://badge.fury.io/js/econf)
-[![Dependency Status](https://david-dm.org/rodrigok/econf.png)](https://david-dm.org/rodrigok/econf.png)
+[![Dependency Status](https://david-dm.org/rodrigok/econf.svg)](https://david-dm.org/rodrigok/econf#info=dependencies)
+[![Dependency Status](https://david-dm.org/rodrigok/econf/dev-status.png)](https://david-dm.org/rodrigok/econf#info=devDependencies)
 [![Build Status](https://travis-ci.org/rodrigok/econf.svg?branch=master)](https://travis-ci.org/rodrigok/econf)
 
 [![NPM](https://nodei.co/npm/econf.png?downloads=true&stars=true)](https://nodei.co/npm/econf/)
