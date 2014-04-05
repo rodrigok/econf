@@ -1,5 +1,7 @@
+var path = require('path');
+
 process.env.NODE_ENV = 'production.001';
-var env = require('../lib/index')();
+var env = require('../lib/index')(path.join(__dirname, '/.econf.js'));
 
 var assert = require("assert")
 describe('Production.001', function(){

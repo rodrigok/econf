@@ -2,9 +2,6 @@
   "name": "econf",
   "version": "0.0.2",
   "description": "Load configs from hierarchical objects to process.env",
-  "scripts": {
-    "test": "cd test && mocha -R spec"
-  },
   "repository": "https://github.com/rodrigok/econf",
   "author": "Rodrigo K. Nascimento (rodrigoknascimento@gmail.com)",
   "license": "MIT",
@@ -16,5 +13,11 @@
   "dependencies": {
     "commander": "~2.1.0",
     "colors": "~0.6.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.4.0"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }
