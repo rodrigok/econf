@@ -1,6 +1,6 @@
 {
   "name": "econf",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Load configs from hierarchical objects to process.env",
   "repository": "https://github.com/rodrigok/econf",
   "author": "Rodrigo K. Nascimento (rodrigoknascimento@gmail.com)",
