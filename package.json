@@ -11,11 +11,11 @@
   },
   "preferGlobal": "false",
   "dependencies": {
-    "commander": "~2.1.0",
+    "commander": "~2.2.0",
     "colors": "~0.6.2"
   },
   "devDependencies": {
-    "mocha": "~1.4.0"
+    "mocha": "~1.18.2"
   },
   "scripts": {
     "test": "mocha"
