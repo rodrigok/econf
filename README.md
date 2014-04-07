@@ -22,10 +22,10 @@ Import the econf at the top of your code to ensure that your configurations will
 require('econf')();
 ```
 
-optionally, you can specify the file name
+optionally, you can specify the file name and custom env name
 
 ```javascript
-require('econf')('config.js');
+require('econf')('config.js', 'NODE_ENV');
 ```
 
 #.econf.js example
@@ -49,6 +49,26 @@ module.exports = [
 		EMAIL_DELAY: 0
 	}
 ]
+```
+
+#.econf.js example as object
+```javascript
+module.exports = {
+	'newrelic': {
+		NEW_RELIC_KEY: 'key'
+	},
+	'production': {
+		NAME: 'Production Base',
+		AWS_SECRET: 'aws-secret',
+		AWS_KEY: 'aws-key',
+		EMAIL_DELAY: 1000
+	},
+	'production.001': {
+		_extend: ['production', 'newrelic'],
+		NAME: 'Production 001',
+		EMAIL_DELAY: 0
+	}
+}
 ```
 
 The config above will inject the code below into process.env
